@@ -9,9 +9,13 @@ $eerstegetal = readline();
 echo "Wat word uw tweede getal?".PHP_EOL;
 $tweedegetal = readline();
 
+if ($uitvoering == "%") {
+  echo $eerstegetal + $tweedegetal;
+}
+
 if ($uitvoering == "-") {
   echo $eerstegetal - $tweedegetal;
 }
 else {
-  echo $eerstegetal + $tweedegetal;
+  echo "Je moet + of - gebruiken";
 }
